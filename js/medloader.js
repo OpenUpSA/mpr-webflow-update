@@ -43,7 +43,7 @@ var process_request = function(result) {
         $('.listing-price', res).text(datum.sep);  
         $('.show-more', res).data('data-nappi', datum.nappi_code);     
         res.show();
-        $('.show-more', res).click(createClickCallBack(res))
+        $('.show-more', res).one('click', createClickCallBack(res));
        }
     }
   }
