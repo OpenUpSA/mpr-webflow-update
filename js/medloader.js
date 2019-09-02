@@ -63,7 +63,6 @@ var process_request_for_details = function(resultObject, listing) {
     var res = $('.listing-accordion-content', listing);
     res = $(res)
     if (res != undefined) {
-      console.log(111, resultObject)
       $('.single-exit-price', res).text(resultObject.sep);
       $('.max-dispensing-fee', res).text(resultObject.dispensing_fee);
       $('.cost-per-capsule', res).text(`${resultObject.min_price} - ${resultObject.max_price}`);
@@ -73,6 +72,24 @@ var process_request_for_details = function(resultObject, listing) {
       $('.number-packs', res).text(resultObject.num_packs);
       $('.generic', res).text(resultObject.is_generic);
       $('.registration', res).text(`Registration Number: ${resultObject.regno}`);
+      var ingredientsWrapper = $('.ingredients-wrapper', res);
+      var $ingredient = $('.ingredient', res);
+      $ingredient.hide();
+      var ingredientsArray = resultObject.ingredients
+      if (ingredientsArray) {
+        for(var i = 0; i < ingredientsArray.length; i++) {
+          var clone = $ingredient.clone();
+          clone.show();
+
+          var $product = new Product(ingredientsArray[i], clone);
+            
+          ingredientsWrapper.append($product.build_product());
+
+
+          clone.find('.row-title').text(ingredientsArray[i].name)
+          clone.find('.row-value').text(`${ingredientsArray[i].strength}${ingredientsArray[i].unit}`);
+        }
+      }
     }
   }
 }
@@ -81,4 +98,27 @@ var load_data = function(url, foo) {
     return $.getJSON(url, function(data) {
         foo(data);
     });
+}
+
+Product = function(data, block) { 
+  this.data = data;
+  this.block = block;
+}
+
+Product.prototype = {
+
+  set_title : function() {
+      $('.row-title', this.block).html('href', '#product-detail-' + this.data.name);
+  },
+
+  set_value : function() {
+      $('.row-value', this.block).html(`${this.data.strength}${this.data.unit}`);
+  },
+
+  build_product : function() {
+      this.set_title();
+      this.set_value();
+
+      return this.block;
+  }
 }
