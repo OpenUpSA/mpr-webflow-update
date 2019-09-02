@@ -63,7 +63,16 @@ var process_request_for_details = function(resultObject, listing) {
     var res = $('.listing-accordion-content', listing);
     res = $(res)
     if (res != undefined) {
+      console.log(111, resultObject)
       $('.single-exit-price', res).text(resultObject.sep);
+      $('.max-dispensing-fee', res).text(resultObject.dispensing_fee);
+      $('.cost-per-capsule', res).text(`${resultObject.min_price} - ${resultObject.max_price}`);
+      $('.schedule', res).text(resultObject.schedule);
+      $('.dosage-form', res).text(resultObject.dosage_form);
+      $('.tablets-doses', res).text(resultObject.pack_size);
+      $('.number-packs', res).text(resultObject.num_packs);
+      $('.generic', res).text(resultObject.is_generic);
+      $('.registration', res).text(`Registration Number: ${resultObject.regno}`);
     }
   }
 }
