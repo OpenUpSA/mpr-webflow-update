@@ -40,19 +40,10 @@ var process_request = function(result) {
       res = $(res)
       if (res != undefined) {
         $('.cc-listing-name', res).text(datum.name);
-        $('.listing-price', res).text(datum.sep);
-        // $('.single-exit-price', res).text(datum.sep);     
+        $('.listing-price', res).text(datum.sep);  
         $('.show-more', res).data('data-nappi', datum.nappi_code);     
         res.show();
         $('.show-more', res).click(createClickCallBack(res))
-        // $('.show-more', res).click(function() {
-        //   // var listingElement = res[0];
-        //   // console.log(7878, listingElement);
-        //   var id = $(this).data('data-nappi');
-        //   // console.log(id)
-        //   load_data(product_detail_url(id), process_request_for_details);
-        //   // console.log(222, $(this).data('data-nappi'))
-        // })
        }
     }
   }
@@ -62,30 +53,23 @@ function createClickCallBack(res) {
   return function() {
     var id = $(this).data('data-nappi');
     load_data(product_detail_url(id), function(resultObject) {
-      console.log(3434, resultObject)
       return process_request_for_details(resultObject, res)
     });
   }
 }
 
 var process_request_for_details = function(resultObject, listing) {
-  console.log(222, resultObject);
-  console.log(21212, listing);
   if (resultObject) {
-    console.log(111, resultObject)
     var res = $('.listing-accordion-content', listing);
     res = $(res)
     if (res != undefined) {
-      console.log(333, resultObject.sep);
       $('.single-exit-price', res).text(resultObject.sep);
     }
   }
 }
 
 var load_data = function(url, foo) {
-    //on_loading();
     return $.getJSON(url, function(data) {
-//        on_loaded(data);
         foo(data);
     });
 }
