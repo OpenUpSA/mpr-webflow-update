@@ -60,7 +60,7 @@ var process_request = function(result) {
         $('.generics-link', res).data('data-id', datum.nappi_code);     
         res.show();
         
-        $('.generics-link', res).one('click', createClickGenericCallBack());
+        $('.generics-link', res).one('click', createClickGenericCallBack(res));
         $('.show-more', res).one('click', createClickCallBack(res));
        }
     }
