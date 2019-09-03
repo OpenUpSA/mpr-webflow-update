@@ -1,3 +1,16 @@
+$(document).ready(function() {
+  $("#medicine-search").on("keyup", function(e) {
+    entermedicine(e);
+  });
+  $(function() {
+    // Bind the event.
+    $(window).on('hashchange', function() {
+      load_medicines(location.hash);
+    })
+    // Trigger the event (useful on page load).
+    load_medicines(location.hash);
+  });
+});
 
 var timer, delay = 500;
 var search_url = function(term) { return 'https://mpr.code4sa.org/api/v2/search-lite?q=' + term; }
