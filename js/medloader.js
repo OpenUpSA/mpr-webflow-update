@@ -56,21 +56,25 @@ var process_request = function(result) {
       if (res != undefined) {
         $('.cc-listing-name', res).text(datum.name);
         $('.listing-price', res).text(datum.sep);  
-        $('.show-more', res).data('data-nappi', datum.nappi_code);     
+        $('.listing-accordion-trigger', res).data('data-nappi', datum.nappi_code);     
         $('.generics-link', res).data('data-id', datum.nappi_code);     
         res.show();
         
-        $('.generics-link', res).one('click', createClickGenericCallBack(res));
-        $('.show-more', res).one('click', createClickCallBack(res));
+        $('.generics-link', res).click(createClickGenericCallBack(res));
+        $('.listing-accordion-trigger', res).one('click', createClickCallBack(res));
        }
     }
   }
 }
 
-function createClickGenericCallBack() {
-  return function() {
+function createClickGenericCallBack(res) {
+  var id = $(this).data('data-id');
+  console.log(111, id)
+  return function(event) {
+    event.stopImmediatePropagation();
     var id = $(this).data('data-id');
-    load_data(related_url(id), process_request_for_generics);
+    console.log(222, id)
+    load_data(related_url(id), process_request_for_generics, res);
   }
 }
 
@@ -83,17 +87,18 @@ function createClickCallBack(res) {
   }
 }
 
-var process_request_for_generics = function(result) {
+var process_request_for_generics = function(result, listing) {
   $('.listing').hide();
   $(".search-results").css("display", "block")
   if (result.length > 0) {
   	for (var i = 0; i < result.length; i++) {
     	var datum = result[i];
-      var res = $(".listing")[i]
+      var res = $($(".listing")[i], listing)
       res = $(res)
       if (res != undefined) {
         $('.cc-listing-name', res).text(datum.name);
-        $('.listing-price', res).text(datum.sep);      
+        $('.listing-price', res).text(datum.sep);
+        $('.generics-link', res).data('data-id', datum.nappi_code);     
         res.show();
        }
     }
