@@ -20,15 +20,28 @@ var product_detail_url = function(id) { return 'https://mpr.code4sa.org/api/v3/d
 
 var entermedicine = function(e) {
     searchTerm = e.target.value;
-    if (searchTerm.length < 4) return;
-    var load_data = function() {
+
+    if (searchTerm.length < 4) {
+      $(".search-button").click(function() {
+        var load_data = function() {
+          location.hash = 'search:' + searchTerm;
+      }
+        var reset_delay_before_requesting = function() {
+            clearTimeout(timer);
+            timer = setTimeout(load_data, delay);
+        }
+        reset_delay_before_requesting();
+      })
+    } else {
+      var load_data = function() {
         location.hash = 'search:' + searchTerm;
+      }
+      var reset_delay_before_requesting = function() {
+          clearTimeout(timer);
+          timer = setTimeout(load_data, delay);
+      }
+      reset_delay_before_requesting();
     }
-    var reset_delay_before_requesting = function() {
-        clearTimeout(timer);
-        timer = setTimeout(load_data, delay);
-    }
-    reset_delay_before_requesting();
 };
 var load_medicines = function(value) {
     if (value.indexOf(':') >= 0) {
@@ -45,26 +58,26 @@ var load_medicines = function(value) {
 }
 var process_request = function(result) {
   $('.listing').hide();
-  $(".search-results").css("display", "block")
+  $(".search-results").css("display", "block");
   $('#results-state', res).text('results');
-    $('.home-title-wrapper').css({'margin-top': 0, 'height': 0, 'opacity': 0, 'transition': 'height 0.1s ease-out, opacity 0.1s ease-out, margin-top 0.1s ease-out'});
-    $('.hero-image').css({'height': 0, 'opacity': 0, 'transition': 'height 0.1s ease-out, opacity 0.1s ease-out'});
-    $('#results-number', res).text(result.length);
-  	for (var i = 0; i < result.length; i++) {
-    	var datum = result[i];
-      var res = $(".listing")[i]
-      res = $(res)
-      if (res != undefined) {
-        $('.cc-listing-name', res).text(datum.name);
-        $('.listing-price', res).text(datum.sep);  
-        $('.listing-accordion-trigger', res).data('data-nappi', datum.nappi_code);     
-        $('.generics-link', res).data('data-id', datum.nappi_code);     
-        res.show();
-        
-        $('.generics-link', res).click(createClickGenericCallBack(res));
-        $('.listing-accordion-trigger', res).one('click', createClickCallBack(res));
-       }
-    }
+  $('.home-title-wrapper').css({'margin-top': 0, 'height': 0, 'opacity': 0, 'transition': 'height 0.1s ease-out, opacity 0.1s ease-out, margin-top 0.1s ease-out'});
+  $('.hero-image').css({'height': 0, 'opacity': 0, 'transition': 'height 0.1s ease-out, opacity 0.1s ease-out'});
+  $('#results-number', res).text(result.length);
+  for (var i = 0; i < result.length; i++) {
+    var datum = result[i];
+    var res = $(".listing")[i]
+    res = $(res)
+    if (res != undefined) {
+      $('.cc-listing-name', res).text(datum.name);
+      $('.listing-price', res).text(datum.sep);  
+      $('.listing-accordion-trigger', res).data('data-nappi', datum.nappi_code);     
+      $('.generics-link', res).data('data-id', datum.nappi_code);     
+      res.show();
+      
+      $('.generics-link', res).click(createClickGenericCallBack(res));
+      $('.listing-accordion-trigger', res).one('click', createClickCallBack(res));
+      }
+  }
 }
 
 function createClickGenericCallBack(res) {
