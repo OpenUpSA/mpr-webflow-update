@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#Medicine-search-2").on("keyup", function(e) {
+  $("#medicine-search").on("keyup", function(e) {
     entermedicine(e);
   });
   $(function() {
