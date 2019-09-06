@@ -20,9 +20,9 @@ var product_detail_url = function(id) { return 'https://mpr.code4sa.org/api/v3/d
 
 var entermedicine = function(e) {
     searchTerm = e.target.value;
-
     if (searchTerm.length < 4) {
       $(".search-button").click(function() {
+        e.preventDefault();
         var load_data = function() {
           location.hash = 'search:' + searchTerm;
       }
