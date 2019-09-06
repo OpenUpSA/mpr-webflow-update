@@ -22,10 +22,9 @@ var entermedicine = function(e) {
     searchTerm = e.target.value;
     if (searchTerm.length < 4) {
       $(".search-button").click(function() {
-        e.preventDefault();
         var load_data = function() {
           location.hash = 'search:' + searchTerm;
-      }
+        }
         var reset_delay_before_requesting = function() {
             clearTimeout(timer);
             timer = setTimeout(load_data, delay);
