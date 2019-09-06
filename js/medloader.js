@@ -47,8 +47,8 @@ var process_request = function(result) {
   $('.listing').hide();
   $(".search-results").css("display", "block")
   $('#results-state', res).text('results');
-    $('.home-title-wrapper').css('display', 'none');
-    $('.hero-image').css('display', 'none');
+    $('.home-title-wrapper').css({'margin-top': 0, 'height': 0, 'opacity': 0, 'transition': 'height 0.1s ease-out, opacity 0.1s ease-out, margin-top 0.1s ease-out'});
+    $('.hero-image').css({'height': 0, 'opacity': 0, 'transition': 'height 0.1s ease-out, opacity 0.1s ease-out'});
     $('#results-number', res).text(result.length);
   	for (var i = 0; i < result.length; i++) {
     	var datum = result[i];
