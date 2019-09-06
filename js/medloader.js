@@ -46,9 +46,10 @@ var load_medicines = function(value) {
 var process_request = function(result) {
   $('.listing').hide();
   $(".search-results").css("display", "block")
-  if (result.length > 0) {
+  $('#results-state', res).text('results');
     $('.home-title-wrapper').css('display', 'none');
     $('.hero-image').css('display', 'none');
+    $('#results-number', res).text(result.length);
   	for (var i = 0; i < result.length; i++) {
     	var datum = result[i];
       var res = $(".listing")[i]
@@ -64,16 +65,12 @@ var process_request = function(result) {
         $('.listing-accordion-trigger', res).one('click', createClickCallBack(res));
        }
     }
-  }
 }
 
 function createClickGenericCallBack(res) {
-  var id = $(this).data('data-id');
-  console.log(111, id)
   return function(event) {
     event.stopImmediatePropagation();
     var id = $(this).data('data-id');
-    console.log(222, id)
     load_data(related_url(id), process_request_for_generics, res);
   }
 }
@@ -89,8 +86,10 @@ function createClickCallBack(res) {
 
 var process_request_for_generics = function(result, listing) {
   $('.listing').hide();
-  $(".search-results").css("display", "block")
+  $(".search-results").css("display", "block");
+  $('#results-state', res).text('generics');
   if (result.length > 0) {
+    $('#results-number', res).text(result.length);
   	for (var i = 0; i < result.length; i++) {
     	var datum = result[i];
       var res = $($(".listing")[i], listing)
