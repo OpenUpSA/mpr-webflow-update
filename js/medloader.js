@@ -145,7 +145,7 @@ var process_request_for_details = function(resultObject, listing) {
       $('.single-exit-price', res).text(resultObject.sep);
       $('.max-dispensing-fee', res).text(resultObject.dispensing_fee);
       $('.price-range', res).text(`${resultObject.min_price} - ${resultObject.max_price}`);
-      $('.cost-per-unit', res).text(`${resultObject.min_cost_per_unit}/${resultObject.dosage_form} - ${resultObject.max_cost_per_unit}/${resultObject.dosage_form}`);
+      $('.cost-per-unit', res).text(`${resultObject.min_cost_per_unit} / ${resultObject.dosage_form} - ${resultObject.max_cost_per_unit} / ${resultObject.dosage_form}`);
       $('.schedule', res).text(resultObject.schedule);
       $('.dosage-form', res).text(resultObject.dosage_form);
       $('.tablets-doses', res).text(resultObject.pack_size);
