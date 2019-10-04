@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Sep 11 2019 09:14:21 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri Oct 04 2019 08:45:49 GMT+0000 (UTC)  -->
 <html data-wf-page="5d5aa8384a2e8688f7b5c551" data-wf-site="5d5aa8384a2e8661b3b5c54f">
 <head>
   <meta charset="utf-8">
-  <title>Medicine Price Registry - Working (Adi)</title>
+  <title>Medicine Price Registry</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/mprdemo.webflow.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Red Hat Display:regular,italic,700","DM Serif Display:regular,italic"]  }});</script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Red Hat Display:regular,italic,700", "DM Serif Display:regular,italic"]
+        }
+      });
+    </script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="icons/webclip.png" rel="apple-touch-icon">
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
   <div id="page-top" data-scroll-time="0.75" class="page-top"></div>
@@ -71,7 +83,6 @@
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -89,12 +100,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -105,15 +120,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -135,12 +150,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="48376ecb-5406-a772-cfc0-071ba19add94" class="listing-accordion-trigger">
+              <div data-w-id="7e94f769-bb78-3ef8-149c-e49e5d77f655" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -158,12 +172,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -174,15 +192,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -204,12 +222,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="adf82ab6-ceda-96ee-9493-66317773e7eb" class="listing-accordion-trigger">
+              <div data-w-id="40032acb-011c-1159-b21d-903a1ae67abc" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -227,12 +244,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -243,15 +264,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -273,12 +294,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="3d66fbe8-8b15-a01b-67a5-47ef127ce538" class="listing-accordion-trigger">
+              <div data-w-id="10fea881-577f-837c-6c14-93e2881e5423" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -296,12 +316,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -312,15 +336,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -342,12 +366,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="0d4d9fb2-c7cb-16d3-8787-5d022e1ba3d8" class="listing-accordion-trigger">
+              <div data-w-id="ebdfe260-8f14-043c-1392-74cffa9bd1ce" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -365,12 +388,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -381,15 +408,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -411,12 +438,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="e8928501-ab74-26ed-3cc4-e8c5555fefc8" class="listing-accordion-trigger">
+              <div data-w-id="12a9a83f-d608-69e7-367c-d01bec669e37" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -434,12 +460,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -450,15 +480,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -480,12 +510,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="3ea8590c-0da4-8f80-e269-c8f047c8e27b" class="listing-accordion-trigger">
+              <div data-w-id="e64cfeb2-9e28-091c-0c13-58019aef210a" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -503,12 +532,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -519,15 +552,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -549,12 +582,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="d22b0e88-a8d6-6deb-b7f0-8f432e849119" class="listing-accordion-trigger">
+              <div data-w-id="a9e23b47-1213-e15d-b078-484de1e99432" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -572,12 +604,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -588,15 +624,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -618,12 +654,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="8a614d0d-8de8-0614-6686-fe480b60509f" class="listing-accordion-trigger">
+              <div data-w-id="5950333d-e301-f880-4da4-ebbabf8184ea" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -641,12 +676,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -657,15 +696,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -687,12 +726,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="b7b7b3a4-6930-a49d-fd4e-50341324cb2b" class="listing-accordion-trigger">
+              <div data-w-id="3a13b528-9fe9-37a2-7202-78b84d437825" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -710,12 +748,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -726,15 +768,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -756,12 +798,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="a8623c98-769e-e55a-73ea-c326b7883922" class="listing-accordion-trigger">
+              <div data-w-id="60dee656-cb0c-83a1-8b5b-533f67a6185b" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -779,12 +820,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -795,15 +840,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -825,12 +870,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="dcabc1eb-4b0b-3dc4-d9c8-adca3aeaceb3" class="listing-accordion-trigger">
+              <div data-w-id="55f6d439-ebbd-d819-e675-4f0f128726e9" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -848,12 +892,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -864,15 +912,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -894,12 +942,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="ae06dfd9-7008-2022-0037-ab6010fb5a13" class="listing-accordion-trigger">
+              <div data-w-id="d6abbb21-6da7-34ac-de41-3686d8af41cf" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -917,12 +964,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -933,15 +984,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -963,12 +1014,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="4fa44b2b-ebc2-3702-7ec8-265740dd84a1" class="listing-accordion-trigger">
+              <div data-w-id="a20850de-8949-eac6-4366-486ce47018db" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -986,12 +1036,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1002,15 +1056,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1032,12 +1086,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="d6404308-575b-f92b-43eb-2a3f7c27ef5c" class="listing-accordion-trigger">
+              <div data-w-id="3b45efb2-d551-370b-01e9-285d654cbc79" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1055,12 +1108,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1071,15 +1128,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1101,12 +1158,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="46587c8f-8877-f1f3-7862-5eed726a8f5d" class="listing-accordion-trigger">
+              <div data-w-id="b8e979f1-eff7-4caf-41a0-7c926f2e86e7" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1124,12 +1180,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1140,15 +1200,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1170,12 +1230,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="cf147afa-2439-70b2-d45d-277bd93c930e" class="listing-accordion-trigger">
+              <div data-w-id="67e109ed-5e39-81e5-8802-d4957d644ca0" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1193,12 +1252,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1209,15 +1272,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1239,12 +1302,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="93c79bf5-046a-3e8d-feac-461fbf22db00" class="listing-accordion-trigger">
+              <div data-w-id="4bccb62d-df61-5ab2-ae05-c4c96bc236ad" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1262,12 +1324,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1278,15 +1344,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1308,12 +1374,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="893b87fd-9dc7-77dd-9c20-a0c96b4c1fcb" class="listing-accordion-trigger">
+              <div data-w-id="04d030bc-5c03-6cfd-cf5f-198c9e74a6e8" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1331,12 +1396,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1347,15 +1416,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1377,12 +1446,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="8c3c3e70-7f3f-68f6-e48a-d86ac5de47ad" class="listing-accordion-trigger">
+              <div data-w-id="20a6d757-cf2e-dd88-97d0-d58b1449b081" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1400,12 +1468,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1416,15 +1488,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1446,12 +1518,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="a59da093-0e1c-be39-769b-e2b2943c990a" class="listing-accordion-trigger">
+              <div data-w-id="7f009954-319d-8a74-269c-8d0ed6dc8d95" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1469,12 +1540,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1485,15 +1560,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1515,12 +1590,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="3ed89a07-9d1c-dda4-972a-6aaedf568de8" class="listing-accordion-trigger">
+              <div data-w-id="ecc9a0cb-6079-b9ed-16f5-7aa4be703a0a" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1538,12 +1612,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1554,15 +1632,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1584,12 +1662,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="7eddb7e2-1afa-da79-c751-e8a4a7ef23f4" class="listing-accordion-trigger">
+              <div data-w-id="075dbacd-aad8-e6b2-9abf-0e60079557e8" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1607,12 +1684,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1623,15 +1704,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1653,12 +1734,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="20ad66d8-d2e8-1e67-d374-810729cd4d44" class="listing-accordion-trigger">
+              <div data-w-id="5f935d34-5c03-6c71-a1c3-f748bb4419d2" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1676,12 +1756,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1692,15 +1776,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1722,12 +1806,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="0ddf7c77-dc02-1951-337e-adc21b69f94a" class="listing-accordion-trigger">
+              <div data-w-id="89cb85cd-2985-31b1-6dac-0018481cbd1b" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1745,12 +1828,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1761,15 +1848,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1791,12 +1878,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="505dd30c-22c2-e3b1-a209-1b00bb03632b" class="listing-accordion-trigger">
+              <div data-w-id="0f15ce3d-8afa-1580-e44a-922eb5a9519a" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1814,12 +1900,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1830,15 +1920,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1860,12 +1950,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="9036d2c0-a87a-7592-ad78-0319e5f7e281" class="listing-accordion-trigger">
+              <div data-w-id="529ab48b-9eba-918d-d112-989825014186" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1883,12 +1972,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1899,15 +1992,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1929,12 +2022,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="34d4fd73-5a31-cbc2-39cd-e69d5ee652a0" class="listing-accordion-trigger">
+              <div data-w-id="3f3e8a04-98af-b24a-be25-d6ea7562634b" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -1952,12 +2044,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -1968,15 +2064,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -1998,12 +2094,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="a38dfc65-b915-80e4-694b-6ae483fa4287" class="listing-accordion-trigger">
+              <div data-w-id="2f48fd14-1e8e-9e67-a27e-94794c56c232" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -2021,12 +2116,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -2037,15 +2136,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -2067,12 +2166,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="bdf3d9c2-3fe0-7dd8-a17d-24b08ceba0fd" class="listing-accordion-trigger">
+              <div data-w-id="56458e56-3bb4-6e5e-3b2b-fc7abfdec208" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -2090,12 +2188,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -2106,15 +2208,15 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -2136,12 +2238,11 @@
           </div>
           <div id="dummy-result" class="listing">
             <div class="plate cc-listing">
-              <div data-w-id="a34232f3-27bd-adc8-09b2-7c032dd29ed8" class="listing-accordion-trigger">
+              <div data-w-id="902e20df-dd8b-d32e-0be3-b1872d93e13b" class="listing-accordion-trigger">
                 <div class="listing-title-wrapper">
                   <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
                   <div class="listing-name-wrapper">
                     <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
-                    <div class="listing-name-details">10 CAPSULES / 500 MG</div>
                   </div>
                 </div>
                 <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
@@ -2159,12 +2260,16 @@
                         <div class="row-value single-exit-price">R502.16</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Max dispensing fee:</div>
+                        <div class="row-title">Max Dispensing Fee:</div>
                         <div class="row-value max-dispensing-fee">R177.47</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Cost per Capsule:</div>
-                        <div class="row-value cost-per-capsule">R8.37 - R11.53</div>
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
                       </div>
                       <div class="listing-row-wrapper">
                         <div class="row-title">Schedule:</div>
@@ -2175,15 +2280,663 @@
                         <div class="row-value dosage-form">Capsule</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Tablets/Doses:</div>
+                        <div class="row-title">Tablets/ml/Doses:</div>
                         <div class="row-value tablets-doses">60</div>
                       </div>
                       <div class="listing-row-wrapper">
-                        <div class="row-title">Number of packs:</div>
+                        <div class="row-title">Number of Packs:</div>
                         <div class="row-value number-packs">1</div>
                       </div>
                       <div class="listing-row-wrapper last">
-                        <div class="row-title">generic/innovator:</div>
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="8c46fe34-5a7f-4c43-b10d-6d4a858852ef" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="f70f306e-7e7b-9e50-2a7e-27df25a7828e" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="b7b22ec4-a2b3-7d92-9d95-b2ee438eed29" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="e2b48a3d-0801-a752-ae51-71375bf624fa" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="d8521d63-4b6b-da0a-6c3c-9667eff3148e" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="54ec09ce-c228-cfb2-aa6a-0e37faf7b7d9" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="9dd7acd3-948e-40cd-1918-2ad48609db10" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="914f09e5-2a86-5a46-fa2c-1d2079a444c7" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
+                        <div class="row-value generic">Originator</div>
+                      </div>
+                    </div>
+                    <div class="listing-column cc-50 cc-mobile-full-width ingredients-wrapper">
+                      <h4 class="listing-heading">ingredients</h4>
+                      <div class="listing-row-wrapper ingredient">
+                        <div class="row-title">Aspirin</div>
+                        <div class="row-value">25mg</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-details-wrapper">
+                    <div class="listing-details registration">Registration Number: 31/8/0641</div>
+                    <div class="listing-details-sharing-wrapper"><a href="#" class="link-block-2 w-inline-block"><img src="images/baseline-share-24px.svg" width="24" height="24" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="dummy-result" class="listing">
+            <div class="plate cc-listing">
+              <div data-w-id="4886869a-fe1a-4886-ed53-5df6c00729f9" class="listing-accordion-trigger">
+                <div class="listing-title-wrapper">
+                  <div class="listing-icon-wrapper"><img src="images/capsule.svg" height="24" width="24" alt="" class="listing-icon"></div>
+                  <div class="listing-name-wrapper">
+                    <h3 class="smaller-heading cc-listing-name">Disprin Plus 10 (Formerly Codis 10)</h3>
+                  </div>
+                </div>
+                <div class="listing-info-wrapper"><a href="#" class="generics-link">Find generics</a>
+                  <div class="listing-price"><span class="text-span">R24.12</span><span class="text-span-2"> - </span><span class="high">R35.63</span></div>
+                </div>
+                <div class="show-more"><img src="images/baseline-expand_more-24px.svg" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" alt="" class="show-more-icon"></div>
+              </div>
+              <div style="display:none" class="listing-accordion-content">
+                <div class="accordion-content-wrapper">
+                  <div class="listing-columns-wrapper">
+                    <div class="listing-column cc-50 cc-mobile-full-width">
+                      <h4 class="listing-heading">PRODUCT DETAILS</h4>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Medicine Single Exit Price:</div>
+                        <div class="row-value single-exit-price">R502.16</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Max Dispensing Fee:</div>
+                        <div class="row-value max-dispensing-fee">R177.47</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Price Range (incl VAT and Fees):</div>
+                        <div class="row-value price-range">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Cost per Unit:</div>
+                        <div class="row-value cost-per-unit">R8.37 - R11.53</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Schedule:</div>
+                        <div class="row-value schedule">S3</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Dosage Form:</div>
+                        <div class="row-value dosage-form">Capsule</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Tablets/ml/Doses:</div>
+                        <div class="row-value tablets-doses">60</div>
+                      </div>
+                      <div class="listing-row-wrapper">
+                        <div class="row-title">Number of Packs:</div>
+                        <div class="row-value number-packs">1</div>
+                      </div>
+                      <div class="listing-row-wrapper last">
+                        <div class="row-title">Generic/Innovator:</div>
                         <div class="row-value generic">Originator</div>
                       </div>
                     </div>
@@ -2238,7 +2991,18 @@
       <div class="info-section">
         <div class="plate cc-light">
           <div class="info-number">?</div>
-          <p><span class="bold">Did you know?</span> Medicine prices in South Africa are regulated and there are guidelines that ensure that you should never pay more than a certain amount for a specific medication. This price is determined using the <a href="#">single exit price</a>, which is the maximum amount a medicine can be charged at.</p>
+          <p><span class="bold">Did you know?</span> Medicine prices in South Africa are regulated and there are guidelines that ensure that you should never pay more than a certain amount for a specific medication. This price is determined using the <a href="https://search.opengazettes.org.za/text/34055?page=38">single exit price</a>, which is the maximum amount a medicine can be charged at.</p>
+        </div>
+      </div>
+      <div class="cc-border-top">
+        <div class="cc-flex cc-justify-between cc-align-center"><a href="http://www.openup.org.za" target="_blank" class="logo-link w-inline-block"><img src="images/openup-logo.png" srcset="images/openup-logo-p-500.png 500w, images/openup-logo.png 544w" sizes="180px" alt="" class="logo"></a>
+          <div>
+            <div class="text cc-small cc-mb-4">MPR is created and maintained by <a href="http://www.openup.org.za" target="_blank">OpenUp</a>.</div>
+            <div class="text cc-small">Contact <a href="mailto:adi@openup.org.za?subject=MPR">adi@openup.org.za</a> for more details.</div>
+          </div>
+          <div>
+            <div class="text cc-mb-4 cc-small">Prices were collected on 2019-08-26.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -2246,6 +3010,6 @@
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <script src="js/medloader.js" type="text/javascript"></script>
+  <script src="https://code4sa.org/medicine-price-registry/webflow/webflow.js"></script>
 </body>
 </html>
