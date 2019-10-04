@@ -160,16 +160,16 @@ var process_request_for_details = function(resultObject, listing) {
       var ingredientsWrapper = $('.ingredients-wrapper', res);
       var $ingredient = $('.ingredient', res);
       $ingredient.hide();
-      var ingredientsArray = resultObject.ingredients
+      var ingredientsArray = resultObject.ingredients;
       if (ingredientsArray) {
         for(var i = 0; i < ingredientsArray.length; i++) {
           var clone = $ingredient.clone();
           clone.show();
 
           var $product = new Product(ingredientsArray[i], clone);
-
-            $('.ingredients-wrapper div:nth-child(2)', res).remove();
-            ingredientsWrapper.append($product.build_product());
+          
+          $('.ingredients-wrapper div:nth-child(2)', res).remove();
+          ingredientsWrapper.append($product.build_product());
 
 
           clone.find('.row-title').text(ingredientsArray[i].name)
